@@ -58,7 +58,7 @@ header, section, figure, footer{
 }
 
 img{
-  filter: drop-shadow(2px 2px 2px #02010a);
+  filter: drop-shadow(2px 2px 1px #02010a);
 }
 
 #central{
@@ -118,8 +118,36 @@ img{
   transform: translate(20px, -5px);
 }
 
+#galeria{
+  width: 100%;
+  background-color: #d5c75f;
+  border: 1px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gal-col{
+  width: 100%;
+}
+
+.gal-img img{
+  width: 80%;
+  margin: 2%;
+}
+
+#gal-img-1{
+  filter: blur(10px);
+}
+
+#gal-img-2, #gal-img-4, #gal-img-6 {
+  filter: grayscale(100%);
+}
+
+
+/* Footer*/
 .social_logo{
-  width: 30%;
+  width: 20%;
   border-radius: 25px;
 }
 
@@ -206,6 +234,16 @@ div[id|="footer-col"]{
     margin: 0;
     padding: 0;
   }
+
+  .gal-col{
+    width: 33%;
+    margin: auto;
+  }
+
+  .gal-img{
+    width: 100%;
+  }
+
 
   div[id|="footer-col"]{
     width: 25%;
