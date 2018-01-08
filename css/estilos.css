@@ -131,16 +131,12 @@ footer{
   flex-flow: row wrap;
 }
 
-#footer-col-1{
-  text-align: center;
-  margin:auto;
-}
 
 footer h2:first-of-type{
   margin-top: 0;
 }
 
-div[class|="footer-col"]{
+div[id|="footer-col"]{
   width: 100%;
 }
 
@@ -211,7 +207,7 @@ div[class|="footer-col"]{
     padding: 0;
   }
 
-  div[class|="footer-col"]{
+  div[id|="footer-col"]{
     width: 25%;
   }
 
