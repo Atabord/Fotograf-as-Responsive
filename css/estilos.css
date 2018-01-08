@@ -1,18 +1,37 @@
-body{
-  font-family: helvetica;
+/* Mobile first*/
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("../fuentes/DancingScript-Regular.ttf");
 }
+
+body{
+  font-family: "Dancing Script", cursive;
+  font-size: 5vw;
+  background-color: #02010a;
+}
+
+#contenido{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
 header{
   background-color: #5B7989;
   color: white;
   border-radius: 10px 10px 0 0;
   text-align: center;
   margin-bottom: 0px;
-  border: 1px solid black;
-
 }
 
 header h1{
   text-shadow: 2px 2px 2px #02010a;
+  margin-top: 0;
+}
+
+nav ul{
+  margin-bottom: 0;
 }
 
 nav li{
@@ -36,6 +55,10 @@ a{
 
 header, section, figure, footer{
   margin: 0;
+}
+
+img{
+  filter: drop-shadow(2px 2px 2px #02010a);
 }
 
 #central{
@@ -103,14 +126,35 @@ header, section, figure, footer{
 footer{
   border-radius: 0 0 10px 10px;
   background-color: #C6d5c5;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
 
+#footer-col-1{
+  text-align: center;
+  margin:auto;
 }
 
 footer h2:first-of-type{
   margin-top: 0;
 }
 
-@media screen and (min-width: 781px){
+div[class|="footer-col"]{
+  width: 100%;
+}
+
+/* Desktop*/
+
+@media screen and (min-width: 900px){
+
+  body{
+    font-size: 1.5vw;
+  }
+
+  #contenido{
+    width: 900px;
+  }
 
   header{
     display: flex;
@@ -119,6 +163,13 @@ footer h2:first-of-type{
     border: 0px;
   }
 
+  nav{
+    float: right;
+    position: relative;
+    right: 0px;
+    padding: 14px;
+    margin-left: auto;
+  }
   header nav ul li
   {
     list-style: none;
@@ -142,12 +193,6 @@ footer h2:first-of-type{
   ul{
     margin: 0 ;
   }
-  nav{
-    float: right;
-    position: absolute;
-    right: 0px;
-    padding: 14px;
-  }
 
   header h1{
 
@@ -166,8 +211,12 @@ footer h2:first-of-type{
     padding: 0;
   }
 
+  div[class|="footer-col"]{
+    width: 25%;
+  }
+
   .social_logo{
-    width: 10%;
+    width: 30%;
   }
 
 }
