@@ -4,7 +4,7 @@ body{
 header{
   background-color: #5B7989;
   color: white;
-  border-radius: 15px 15px 0 0;
+  border-radius: 10px 10px 0 0;
   text-align: center;
   margin-bottom: 0px;
   border: 1px solid black;
@@ -34,7 +34,7 @@ a{
   background-color: darkgrey;
 }
 
-header, section, figure{
+header, section, figure, footer{
   margin: 0;
 }
 
@@ -98,6 +98,16 @@ header, section, figure{
 .social_logo{
   width: 30%;
   border-radius: 25px;
+}
+
+footer{
+  border-radius: 0 0 10px 10px;
+  background-color: #C6d5c5;
+
+}
+
+footer h2:first-of-type{
+  margin-top: 0;
 }
 
 @media screen and (min-width: 781px){
